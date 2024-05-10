@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(255, 228, 196);
+    padding-top:63px;
+  
+  }
+
+  .navbar-nav .nav-link {
+    
+    font-size: 20px; /* Yazı boyutunu istediğiniz değere ayarlayabilirsiniz */
+    font-weight: 600; 
+    font-style: italic;
+}
+
+.resimSlider{
+    height: 400px;
+}
