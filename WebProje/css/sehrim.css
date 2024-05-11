@@ -1,7 +1,7 @@
 body{
-    background-color:rgb(255, 228, 196);
+   
     padding-top:63px;
-  
+
   }
 
   .navbar-nav .nav-link {
@@ -12,5 +12,40 @@ body{
 }
 
 .resimSlider{
+  width: 20px;
     height: 400px;
+}
+.baslik{
+  text-align: center;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 600;
+  background-color:pink;
+  
+ 
+}
+.nav-item{
+  text-align: center;
+  
+}
+.ul{
+  color: black;
+  height: 80px;
+  background-color: white;
+
+}
+
+.navbar-nav{
+  justify-content: center;
+}
+.card-title{
+ 
+  font-style: italic;
+  font-weight: 700;
+}
+.card-text{
+  font-weight: 500;
+}
+.card{
+  background-color: pink;
 }
