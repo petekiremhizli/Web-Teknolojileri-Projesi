@@ -12,17 +12,15 @@ body{
 }
 
 .resimSlider{
-  width: 20px;
-    height: 400px;
+ height: 900px;
 }
 .baslik{
   text-align: center;
   font-size: 80px;
   font-style: italic;
   font-weight: 600;
-  background-color:pink;
+  background-color:turquoise;
   
- 
 }
 .nav-item{
   text-align: center;
@@ -34,18 +32,27 @@ body{
   background-color: white;
 
 }
-
 .navbar-nav{
   justify-content: center;
 }
-.card-title{
- 
-  font-style: italic;
-  font-weight: 700;
-}
-.card-text{
-  font-weight: 500;
-}
 .card{
   background-color: pink;
+
+
+}
+.card-title{
+  font-style: italic;
+  font-weight:1000px;
+
+}
+.card-text{
+  font-style: normal;
+}
+.yemek
+{height: 328px;}
+
+.sakarya{
+  font-size: 22px;
+  background-color: pink;
+  font-weight:400 ;
 }

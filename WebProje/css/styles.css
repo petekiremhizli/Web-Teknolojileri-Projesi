@@ -21,8 +21,6 @@ body{
     font-weight: 600; 
     font-style: italic;
 }
-
-
  .title{
    font-weight: 400; 
    font-style: italic;
@@ -30,7 +28,6 @@ body{
    color:black;
    
  }
-
   .card-link{
    text-decoration: none;
    color: rgb(0, 0, 0);
@@ -41,14 +38,12 @@ body{
   background-color: rgb(255, 228, 196);
 }
 .card-text{
-  font-size: 25px;
+  font-weight: 100;
+  font-size: 35px;
   font-style: italic;
 }
- .card mb-3{
-  width: 45rem;
- }
+
  .img{
   padding:60px;
-  width:100rem;
   height:30rem;
  }
