@@ -19,7 +19,7 @@ body{
   font-size: 80px;
   font-style: italic;
   font-weight: 600;
-  background-color:turquoise;
+  background-color:bisque;
   
 }
 .nav-item{
@@ -36,7 +36,7 @@ body{
   justify-content: center;
 }
 .card{
-  background-color: pink;
+  background-color: bisque;
 
 
 }
@@ -53,6 +53,6 @@ body{
 
 .sakarya{
   font-size: 22px;
-  background-color: pink;
+  background-color: bisque;
   font-weight:400 ;
 }
