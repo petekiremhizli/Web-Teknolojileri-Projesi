@@ -42,4 +42,8 @@ body{
   font-size: 35px;
   font-style: italic;
 }
-
+.img{
+  height: 400px ;
+  margin-left: 13px;
+  border-radius: 10px;
+}

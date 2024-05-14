@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(255, 228, 196);
+    padding-top: 48px;
+    font-family: Arial, sans-serif;
+
+  
+  }
+  .custom-button {
+    
+    background-color:rgb(255, 228, 196);
+      font-size: large;
+      width: 150px;
+      height:50px;
+      margin: 0px;
+      border-radius:10px;
+       font-weight: 600; 
+       font-style: italic;
+      
+  }
+  .navbar-nav .nav-link {
+      
+      font-size: 20px; 
+      font-weight: 600; 
+      font-style: italic;
+  }
+  .col{ 
+    border-style:solid;
+  }
+ 
+
+
+
+
