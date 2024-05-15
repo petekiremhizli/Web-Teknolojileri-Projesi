@@ -1,10 +1,9 @@
 body{
     background-color:rgb(255, 228, 196);
-    padding-top: 48px;
+    padding-top: 41px;
     font-family: Arial, sans-serif;
-
-  
   }
+  
   .custom-button {
     
     background-color:rgb(255, 228, 196);
@@ -17,6 +16,7 @@ body{
        font-style: italic;
       
   }
+  
   .navbar-nav .nav-link {
       
       font-size: 20px; 
@@ -24,9 +24,20 @@ body{
       font-style: italic;
   }
   .col{ 
-    border-style:solid;
+    border-style:dashed;
   }
- 
+  .col h1{
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    
+    
+  }
+  .col p{
+    font-size: 28px;
+    text-align: center;
+  }
+
 
 
 
