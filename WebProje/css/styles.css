@@ -28,32 +28,17 @@ body{
    color:black;
    
  }
-  .card-link{
-   text-decoration: none;
-   color: rgb(0, 0, 0);
-}
+
 .card{
-  width: 77rem; 
-  height: 25rem;
+ 
   background-color: rgb(255, 228, 196);
 }
 .card-text{
   font-weight: 100;
-  font-size: 35px;
+  font-size: 30px;
   font-style: italic;
 }
-.img{
-  height: 400px ;
-  margin-left: 13px;
-  border-radius: 10px;
-}
-.card-hobi {
-  margin-bottom: 20px;
-}
-
-.navbar-text {/* hobilerim navbarı için*/
-  width: 100%;
-  text-align: center;
+.card a{
+  
   color: black;
-  font-style: italic;
 }
