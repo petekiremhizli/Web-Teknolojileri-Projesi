@@ -41,28 +41,131 @@
       </nav> 
       </header>
       <br><br><br>
-      
-      <form>
-        <div>
-            <label for="name">İsim:</label>
-            <input type="text" id="name" placeholder="Adınız">
-        </div>
-    
-        <div>
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" placeholder="E-posta Adresiniz">
-        </div>
-    
-        <div>
-            <label for="message" >Mesajınız:</label>
-            <textarea  id="message" placeholder="Mesajınızı Yazınız"></textarea>
-        </div>
-    
-        <button type="submit" >Gönder</button>
-        <button type="button" @click="clearForm">Temizle</button>
-    </form>
-    
- 
-    
+      <div id="app">
+        <form action="php/iletisimhedef.php" method="post">
+            <div class="form-group">
+                <label for="text">Metin Kutusu:</label>
+                <input type="text" id="text"name="text" v-model="text">
+                <div class="error" v-if="errors.text">{{ errors.text }}</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre Kutusu:</label>
+                <input type="password" id="password" name="password" v-model="password">
+                <div class="error" v-if="errors.password">{{ errors.password }}</div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" v-model="email">
+                <div class="error" v-if="errors.email">{{ errors.email }}</div>
+            </div>
+            <div class="form-group">
+                <label for="tel">Telefon:</label>
+                <input type="tel" id="tel" name="tel" v-model="tel">
+                <div class="error" v-if="errors.tel">{{ errors.tel }}</div>
+            </div>
+            <div class="form-group">
+                <label>Cinsiyet:</label>
+                <label><input type="radio" name="gender" value="Kadın" v-model="gender">Kadın</label>
+                <label><input type="radio" name="gender" value="Erkek" v-model="gender">Erkek</label>
+                <div class="error" v-if="errors.gender">{{ errors.gender }}</div>
+            </div>
+            <div class="form-group">
+                <label for="textarea">Metin Alanı:</label>
+                <textarea id="textarea" name="textarea" v-model="textarea" rows="4"></textarea>
+                <div class="error" v-if="errors.textarea">{{ errors.textarea }}</div>
+            </div>
+            <div class="form-group button-group">
+                <button type="button" @click="validateWithJavascript">JavaScript ile Doğrula</button>
+                <button type="button" @click="validateWithVue">Vue.js ile Doğrula</button>
+            </div>
+            <button type="submit">Gönder</button>
+            <button type="reset" @click="resetForm">Sıfırla</button>
+        </form>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                text: '',
+                password: '',
+                email: '',
+                tel: '',
+                gender: '',
+                textarea: '',
+                errors: {}
+            },
+            methods: {
+                validateWithJavascript() {
+                    this.errors = {};
+                    // Javascript ile doğrulama işlemleri
+                    if (!this.text) {
+                        this.errors.text = 'Metin Kutusu boş bırakılamaz.';
+                    }
+                    if (!this.password) {
+                        this.errors.password = 'Şifre Kutusu boş bırakılamaz.';
+                    }
+                    if (!this.email) {
+                        this.errors.email = 'E-posta alanı boş bırakılamaz.';
+                    } else if (!this.validEmail(this.email)) {
+                        this.errors.email = 'Geçerli bir e-posta adresi giriniz.';
+                    }
+                    if (!this.tel) {
+                        this.errors.tel = 'Telefon alanı boş bırakılamaz.';
+                    }
+                    if (!this.gender) {
+                        this.errors.gender = 'Cinsiyet seçimi yapılmalıdır.';
+                    }
+                    if (!this.textarea) {
+                        this.errors.textarea = 'Metin Alanı boş bırakılamaz.';
+                    }
+                    if (Object.keys(this.errors).length === 0) {
+                        alert('JavaScript ile form başarıyla doğrulandı!');
+                    }
+                },
+                validateWithVue() {
+                    this.errors = {};
+                    // Vue.js ile doğrulama işlemleri
+                    if (!this.text) {
+                        this.errors.text = 'Metin Kutusu boş bırakılamaz.';
+                    }
+                    if (!this.password) {
+                        this.errors.password = 'Şifre Kutusu boş bırakılamaz.';
+                    }
+                    if (!this.email) {
+                        this.errors.email = 'E-posta alanı boş bırakılamaz.';
+                    } else if (!this.validEmail(this.email)) {
+                        this.errors.email = 'Geçerli bir e-posta adresi giriniz.';
+                    }
+                    if (!this.tel) {
+                        this.errors.tel = 'Telefon alanı boş bırakılamaz.';
+                    }
+                    if (!this.gender) {
+                        this.errors.gender = 'Cinsiyet seçimi yapılmalıdır.';
+                    }
+                    if (!this.textarea) {
+                        this.errors.textarea = 'Metin Alanı boş bırakılamaz.';
+                    }
+                    if (Object.keys(this.errors).length === 0) {
+                        alert('Vue.js ile form başarıyla doğrulandı!');
+                    }
+                },
+                validEmail(email) {
+                    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\.,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,})$/i;
+                    return re.test(email);
+                },
+                resetForm() {
+                    this.text = '';
+                    this.password = '';
+                    this.email = '';
+                    this.tel = '';
+                    this.gender = '';
+                    this.textarea = '';
+                    this.errors = {};
+                }
+            }
+        });
+    </script>
 </body>
 </html>
