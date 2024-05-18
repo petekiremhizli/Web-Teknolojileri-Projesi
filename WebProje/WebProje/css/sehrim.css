@@ -1,0 +1,61 @@
+body{
+   
+    padding-top:63px;
+
+  }
+
+  .navbar-nav .nav-link {
+    
+    font-size: 20px; /* Yazı boyutunu istediğiniz değere ayarlayabilirsiniz */
+    font-weight: 600; 
+    font-style: italic;
+}
+
+.resimSlider{
+ height: 900px;
+}
+.baslik{
+  text-align: center;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 600;
+  background-color:bisque;
+  
+}
+.nav-item{
+  text-align: center;
+  
+}
+.ul{
+  color: black;
+  height: 80px;
+  background-color: white;
+
+}
+.navbar-nav{
+  justify-content: center;
+}
+.card{
+  background-color: bisque;
+
+
+}
+.card-title{
+  font-style: italic;
+  font-weight:1000px;
+
+}
+.card-text{
+  font-style: normal;
+}
+.yemek
+{height: 328px;}
+
+.sakarya{
+  font-size: 22px;
+  background-color: bisque;
+  font-weight:400 ;
+}
+#navbarNav2{
+  margin-top: 0;
+}
