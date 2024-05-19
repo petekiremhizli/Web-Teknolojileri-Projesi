@@ -5,10 +5,9 @@ body{
 }
 .navbar-nav .nav-link {
     
-  font-size: 20px; /* Yazı boyutunu istediğiniz değere ayarlayabilirsiniz */
+  font-size: 20px; 
   font-weight: 600; 
   font-style: italic;
- 
 }
 
 .takim-info {
@@ -19,9 +18,7 @@ body{
  .takim-description {
     margin-bottom: 50px;
     font-size: 18px;
-    font-style: italic;
-    
-    
+    font-style: italic; 
   }
 
 .navbar-nav .link{

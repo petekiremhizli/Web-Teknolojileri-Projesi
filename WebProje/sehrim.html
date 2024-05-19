@@ -14,31 +14,59 @@
 </head>
 
 <body>
+  
+  <!--Navbar kısmı -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mx-auto">
-          <ul class="navbar-nav ml-auto link">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav1">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.biletbayi.com/sakaryada-nerede-ne-yenir.html/">Yeme İçme</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="giris.html">Giriş</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://otelleri.net/sakarya-aktiviteleri.htm">Aktiviteler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://blog.biletbayi.com/sakaryada-gezilecek-yerler.html/">Gezilecek Yerler</a>
+              <a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+  
+  <!--2.Navbar kısmı -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav2">
+          <div class="mx-auto">
+            <ul class="navbar-nav ms-auto link">
+              <li class="nav-item">
+                <a class="nav-link" href="https://blog.biletbayi.com/sakaryada-nerede-ne-yenir.html/">Yeme İçme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://otelleri.net/sakarya-aktiviteleri.htm">Aktiviteler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://blog.biletbayi.com/sakaryada-gezilecek-yerler.html/">Gezilecek Yerler</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 </header>
+
+ <!--Sayfa içeriği kısmı--> 
+ <main>
 <div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
     <div class="card">
@@ -88,35 +116,11 @@
 <br>
 </div>
 <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            
-            <ul class="navbar-nav me-auto">
-             
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="hakkımda.html" >Ana Sayfa</a>
-              </li>  
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="giris.html">Giriş</a> 
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link active"; aria-current="page" href="iletisim.html">İletişim</a>
-              </li>
-          </ul>
-          </div>
+</main> 
 
-        </div>
-      </nav>
+ <!--Slider fotoğraf kısmı -->
     <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
+    <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -154,6 +158,9 @@
   </button>
 </div>
 <br>
+
+ <!--Fotoğraflar hakkında bilgi verme kısmı -->
+<footer>
 <a name="meydan"></a>
 <h1>1-Adapazarı Garı:</h1>
 <p class="sakarya"><br> Sakarya'nın Adapazarı ilçesi Semerciler mahallesinde yer alan TCDD'ye ait ana tren istasyonudur.
@@ -170,7 +177,7 @@
   <a name="kentpark"></a>
   <h1>4-Sakarya Kent Park:</h1>
   <p class="sakarya" >Kent merkezinde 160 bin metrekare alanın enkazdan yeşile dönüştürülmesiyle oluşturulmuştur. Eski Zirai Donatım Kurumu Fabrikası arazisine inşa edilen ve yaklaşık 4 bin 500 metre karelik yürüyüş alanına sahip, Kent parktaki doğal ortam ve ağaçlar korunarak tüm yüzey çimlendirilmiştir. Parkta 14 bin metrekare gölet bulunmaktadır. Kent park, yanına kurulduğu Çark Deresi sayesinde her mevsim yeşildir. Parkın orta yerine inşa edilen gölet ve üzerinde yer alan adacıklara ulaşmak için iki köprü inşa edilmiştir. Adacıklardaki ağaç gölgeleriyle serin ve huzurlu bir ortamın sunulduğu parkta spor yapmak için de faklı bölümler de bulunmaktadır.Kent Park’ta faaliyette olan 2 büfe ve 1 kıl çadır mevcuttur. Kıl çadırın içerisi sedirlerle şekillendirilmiş olup çayı, kahvesi, enfes kumpiri, gözlemesi ve bardakta tarhanasıyla doğal güzellikler içeresinde kır keyfini yaşatmaktadır. Parkta ayrıca tenis kortu ve kapalı yüzme havuzu da bulunmaktadır. Konser organizasyonları başta olmak üzere birçok etkinliğe  ev sahipliği yapmaktadır. </p>
-  
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
  
 </body>

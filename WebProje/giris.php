@@ -5,7 +5,7 @@
     } else {
         // Hatalı mesajı göstermek yerine doğrudan yönlendirme yapıyoruz
         header("Refresh: 3; url=giris.html");
-        echo "Şifre ya da e-mail hatalı. 3 saniye içinde giriş sayfasına yönlendirileceksiniz.";
+        echo "ŞİFRE YA DA E-MAİL BİLGİSİ HATALI! GİRİŞ SAYFASINA YÖNLENDİRİLİYORSUNUZ...";
         exit();
     }
 ?>

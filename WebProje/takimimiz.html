@@ -13,37 +13,40 @@
     
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+   <!--Navbar kısmı -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
           
-          <div class="container-fluid">
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <ul class="navbar-nav me-auto">
            
-            <div class="collapse navbar-collapse" id="navbarNav">
-              
-              <ul class="navbar-nav me-auto">
-               
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="hakkımda.html" >Ana Sayfa</a>
-                </li>  
-              </ul>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="giris.html">Giriş</a> 
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link active"; aria-current="page" href="iletisim.html">İletişim</a>
-                </li>
-            </ul>
-            </div>
-          </div>
-      </nav> 
-    </header>
-  
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" >Ana Sayfa</a>
+            </li>  
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="giris.html">Giriş</a> 
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active"; aria-current="page" href="iletisim.html">İletişim</a>
+            </li>
+        </ul>
+        </div>
+      </div>
+  </nav> 
+
+   <!--Sayfa içeriği kısmı -->
+  </header>
+     <main>
       <div class="container takim-info">
         <div class="row">
           <div class="col-md-6">
@@ -58,21 +61,19 @@
               <br><br>
               <strong> Bugün Sakaryaspor,</strong> yeniden yükseliş ve başarı için çalışmalarını sürdürmektedir. Kulüp, altyapıya verdiği önemi artırmakta ve genç yetenekleri keşfederek geliştirmek için çeşitli projeler yürütmektedir. Ayrıca, taraftarlar her zaman takımlarının yanında yer almakta ve onlara güç vermektedirler.
               
-              Sakaryaspor, sadece bir futbol kulübü değil, aynı zamanda bir şehrin ve bir topluluğun birleştirici gücüdür. Sakarya'nın futbol tutkunu insanları, Sakaryaspor'un her başarısıyla gurur duymakta ve kulübün geleceği için umutla beklemektedirler.
-            </p>
-              </div>
-              
+              Sakaryaspor, sadece bir futbol kulübü değil, aynı zamanda bir şehrin ve bir topluluğun birleştirici gücüdür. Sakarya'nın futbol tutkunu insanları, Sakaryaspor'un her başarısıyla gurur duymakta ve kulübün geleceği için umutla beklemektedirler.</p>
+            </div>
               
           <div class="col-md-6 img">
+            <br><br><br><br>
             <img src="img/sakaryaspor.jpg" class="img-fluid" alt="Sakaryaspor">
           </div>
         </div>
       </div>
-    
-  
-   
- <h2 class="oyuncutitle">~Sakaryaspor Oyuncuları~</h2>
-
+    </main>
+  <!--Tablo kısmı -->
+  <footer>
+<h2 class="oyuncutitle">~Sakaryaspor Oyuncuları~</h2>
 <table>
     <tr>
         <th>Forma No</th>
@@ -146,6 +147,8 @@
       
     </tr>
 </table>
-    
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

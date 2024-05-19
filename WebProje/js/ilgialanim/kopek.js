@@ -1,3 +1,4 @@
+// API dan veri çekme ve sayfaya ekleme fonksiyon ve işlemleri
 function getBreeds() {
     fetch('https://api.thedogapi.com/v1/breeds')
         .then(response => response.json())
@@ -34,5 +35,5 @@ function getBreedInfo() {
         });
 }
 
-// Sayfa yüklendiğinde köpek ırklarını al
+// Sayfa yüklendiğinde köpek ırklarını alma
 window.onload = getBreeds;

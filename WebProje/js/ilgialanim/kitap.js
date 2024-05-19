@@ -1,3 +1,4 @@
+// API dan veri çekme ve sayfaya ekleme fonksiyon ve işlemleri
 function searchBooks() {
     var searchTerm = document.getElementById("searchInput").value;
     var apiUrl = "https://openlibrary.org/search.json?q=" + encodeURIComponent(searchTerm);
@@ -21,7 +22,7 @@ function displayResults(data) {
         return;
     }
 
-    var books = data.docs.slice(0, 2); // çıkan ilk 2 kitap sonucunu al
+    var books = data.docs.slice(0, 2); // çıkan ilk 2 kitap sonucunu alma işlemi
 
     books.forEach(book => {
         var title = book.title;
